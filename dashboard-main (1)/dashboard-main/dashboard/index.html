@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <img
+          class="image"
+          src="./burger23 - Copy.png"
+          onclick=" togglemenu()"
+          alt=""
+        />
+        <ul id="iconList">
+          <li class="active"><i class="fa-solid fa-house-user"></i></li>
+          <li><i class="fas fa-chart-line"></i></li>
+          <li><i class="fas fa-shopping-cart"></i></li>
+          <li><i class="fas fa-ribbon"></i></li>
+          <li><i class="far fa-money-bill-alt"></i></li>
+          <li><i class="fas fa-trophy"></i></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="head">
+          <div class="head-title">
+            <h2>Dashboard</h2>
+            <p>Payment Updates</p>
+          </div>
+          <div class="head-search">
+            <input type="search" placeholder="Search" />
+          </div>
+        </div>
+        <div class="main-board">
+          <div class="card-board">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fas fa-money-check-alt"></i>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <span> Transfer via Card Number</span>
+              <h5>$800</h5>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <i class="fas fa-university"></i>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <span> Transfer via Other Banks</span>
+              <h5>$0.00</h5>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <i class="fas fa-money-check-alt"></i>
+                <i class="fab fa-paypal"></i>
+              </div>
+              <span> Transfer via Paypal</span>
+              <h5>-</h5>
+            </div>
+          </div>
+          <div class="balance-board">
+            <div class="head">
+              <div class="head-title">
+                <h2>Balance</h2>
+                <p>$800.00</p>
+              </div>
+            </div>
+            <div class="balance">
+              <div class="balance-details">
+                <ul class="details">
+                  <li class="topic">Date</li>
+                  <li><a href="#">25 - 10 - 2023</a></li>
+                  <li><a href="#">25 - 10 - 2023</a></li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Name</li>
+                  <li><a href="#">Account Fund</a></li>
+                  <li><a href="#">Card Application</a></li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Status</li>
+                  <li><a href="#">Done</a></li>
+                  <li><a href="#">Pending</a></li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Total</li>
+                  <li><a href="#">$800</a></li>
+                  <li><a href="#">$0.00</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var iconList = document.getElementById("iconList");
+
+      iconList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (iconList.style.maxHeight == "0px") {
+          iconList.style.maxHeight = "130px";
+        } else {
+          iconList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

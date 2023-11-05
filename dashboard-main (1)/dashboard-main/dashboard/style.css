@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: rgb(212, 212, 212);
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar {
+  width: 7%;
+  height: 100%;
+  /* background-color: white; */
+}
+
+.image {
+  width: 50%;
+  height: 5%;
+  /* background-color: white; */
+  /* padding-left: 25px; */
+  display: none;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+}
+
+.sidebar ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar ul li i {
+  margin: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: rgb(83, 82, 82);
+}
+
+.sidebar li:hover,
+li.active {
+  border-right: 1px solid rgb(83, 82, 82);
+}
+.main {
+  width: 93%;
+  height: 100%;
+  padding: 2rem 4rem;
+}
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 20px 30px; */
+}
+
+.head-title p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: rgb(151, 151, 151);
+}
+
+.head-search {
+  /* width: 400px; */
+  /* margin-left: 70%; */
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 7px 13px;
+  border-radius: 15px;
+}
+
+/* MainBoard */
+.main-board {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Card Board */
+
+.card-board {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  width: 230px;
+  height: 120px;
+  padding: 1rem;
+  background: #fff;
+  /* margin-right: 20px; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-icon i {
+  /* margin: 15px 0; */
+  cursor: pointer;
+  font-size: 20px;
+  /* margin-right: 12.5rem; */
+  color: rgb(83, 82, 82);
+}
+
+.card span {
+  font-size: 12px;
+  color: rgb(151, 151, 151);
+}
+
+/* .card h5 {
+  margin-top: 5px;
+} */
+
+/* Balance */
+
+.balance {
+  width: 100%;
+  /* margin: 0 40px; 
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px; */
+}
+
+.balance-details {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.topic {
+  font-style: 20px;
+  font-weight: 500;
+}
+
+.balance-details li {
+  list-style: none;
+  /* margin: 8px 0; */
+}
+
+.balance-details li a {
+  font-style: 18px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .sidebar {
+    background-color: #d4d4d4;
+    width: 10%;
+    /* display: none; */
+  }
+  .sidebar ul {
+    position: absolute;
+    margin-top: 20px;
+  }
+  .sidebar ul li {
+    display: block;
+  }
+  .main {
+    width: 10 0%;
+    padding: 1rem 2rem;
+  }
+  img {
+    width: 45px;
+    height: 25px;
+  }
+  .image {
+    width: 32px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 12px;
+    display: block;
+  }
+  .head {
+    /* width: 50px;
+    height: 100px; */
+    /* /* display: grid; */
+    /* grid-template-rows: 1fr 1fr; */
+  }
+  .head-search {
+    display: none;
+  }
+  .head-title {
+    /* padding-top: 15px; */
+  }
+  .head-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .head-title span {
+    font-size: 10px;
+    font-weight: 300;
+    color: rgb(151, 151, 151);
+  }
+  .main-board {
+    width: 100%;
+    /* background: blue; */
+  }
+  .card-board {
+    /* width: 100%; */
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px; */
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+  .card {
+    width: 100%;
+    /* width: 170px;
+    height: 85px; */
+    /* width: 100%; */
+  }
+
+  .card-icon {
+    width: 100%;
+  }
+  /* .card-icon i {
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 9rem;
+    color: rgb(83, 82, 82);
+  } */
+  /* balance */
+  .balance-board {
+    width: 100%;
+    /* background-color: red; */
+  }
+  .balance {
+    /* margin-left: -60px; */
+    margin-bottom: 50px;
+    /* padding: 10px 30px; */
+  }
+  .balance-details {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px; */
+    padding: 1rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
